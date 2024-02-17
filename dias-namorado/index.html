@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="img" href="/img/heart.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-v2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+
+    <title>| MEU AMOR!</title>
+</head>
+
+<body>
+    <div id="question">
+        <div class="card">
+            <div class="content">
+                <div style="text-align: center;">
+                    <h2>Quem que é a minha menina?</h2>
+                </div>
+
+                <div style="display: flex; justify-content: center;">
+                    <button class="button-13" onclick="redirectYes()" role="button">EUUU</button>
+                    <button class="button-13" onclick="showAlert()" role="button">NÃO SEI</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="message-box" id="successBox" style="display:none;">
+            PARABÉNS MEU AMOR, VOCÊ ACERTOU!
+        </div>
+
+        <div class="message-box error-animation" id="errorBox" style="display:none;">
+            AAAH NÃO AMOR, VOCÊ ERROU!!! TENTA DENOVO
+        </div>
+    </div>
+
+    <script src="/scripts/script-v2.js"></script>
+    <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none;"></canvas>
+</body>
+
+</html>
